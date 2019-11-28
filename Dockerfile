@@ -1,12 +1,12 @@
 # parameters
-ARG REPO_NAME="<REPO_NAME_HERE>"
+ARG REPO_NAME="dt-core"
 
 # ==================================================>
 # ==> Do not change this code
 ARG ARCH=arm32v7
 ARG MAJOR=daffy
 ARG BASE_TAG=${MAJOR}-${ARCH}
-ARG BASE_IMAGE=dt-ros-commons
+ARG BASE_IMAGE=dt-core
 
 # define base image
 FROM duckietown/${BASE_IMAGE}:${BASE_TAG}
